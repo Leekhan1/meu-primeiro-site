@@ -46,25 +46,53 @@
 
   <!-- LOGIN -->
 
-<section class="raid-login">
+<section class="raid-login" id="login-section">
 
   <h2>Login da Guilda</h2>
 
   <div class="login-box">
 
-    <input type="text" placeholder="Nome do Personagem">
+    <input
+      type="text"
+      id="nomeJogador"
+      placeholder="Nome do Personagem"
+    >
 
-    <input type="password" placeholder="Senha">
+    <input
+      type="password"
+      placeholder="Senha"
+    >
 
-    <button class="raid-btn">
+    <button
+      class="raid-btn"
+      onclick="login()"
+    >
       Entrar
     </button>
 
-    <button class="create-btn" onclick="abrirPopup()">
-  Criar Conta
-</button>
+    <button
+      class="create-btn"
+      onclick="abrirPopup()"
+    >
+      Criar Conta
+    </button>
 
   </div>
+
+</section>
+
+<!-- USUÁRIO LOGADO -->
+
+<section
+  class="player-panel"
+  id="player-panel"
+>
+
+  <h2 id="mensagemJogador"></h2>
+
+  <p>
+    ⚔️ Membro oficial da Blood Oath ⚔️
+  </p>
 
 </section>
 

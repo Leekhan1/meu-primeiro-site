@@ -384,3 +384,33 @@ button:hover {
   color: white;
 
 }
+
+/* PLAYER PANEL */
+
+.player-panel {
+
+  display: none;
+
+  text-align: center;
+
+  padding: 100px 20px;
+
+}
+
+.player-panel h2 {
+
+  color: #ef4444;
+
+  font-size: 40px;
+
+  margin-bottom: 20px;
+
+}
+
+.player-panel p {
+
+  font-size: 22px;
+
+  color: white;
+
+}
