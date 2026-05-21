@@ -60,9 +60,9 @@
       Entrar
     </button>
 
-    <button class="create-btn">
-      Criar Conta
-    </button>
+    <button class="create-btn" onclick="abrirPopup()">
+  Criar Conta
+</button>
 
   </div>
 
@@ -71,6 +71,32 @@
 </main>
 
 <script src="script.js"></script>
+
+<!-- POPUP CADASTRO -->
+
+<div class="popup" id="popup">
+
+  <div class="popup-content">
+
+    <span class="close" onclick="fecharPopup()">
+      ✖
+    </span>
+
+    <h2>Criar Conta</h2>
+
+    <input type="text" placeholder="Nome do Personagem">
+
+    <input type="email" placeholder="Email">
+
+    <input type="password" placeholder="Senha">
+
+    <button class="raid-btn">
+      Criar Conta
+    </button>
+
+  </div>
+
+</div>
 
 </body>
 </html>
