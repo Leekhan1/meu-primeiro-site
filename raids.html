@@ -53,37 +53,103 @@
 
   <div class="login-box">
 
-    <input type="text" placeholder="Nome do personagem">
+    <!-- RAID -->
 
-    <select>
+    <select id="raidSelect">
 
-      <option>Classe</option>
+      <option>Escolha a Raid</option>
+
+      <option>🐉 Trial Of Crusader 10N</option>
+
+      <option>👹 Naxxramas 10N</option>
+
+      <option>💀 Icecrown Citadel 10N</option>
+
+    </select>
+
+    <!-- NOME -->
+
+    <input
+      type="text"
+      placeholder="Nome do personagem"
+    >
+
+    <!-- CLASSE -->
+
+    <select
+      id="classe"
+      onchange="mostrarSpecs()"
+    >
+
+      <option>Escolha sua Classe</option>
+
+      <option>Paladino</option>
 
       <option>Guerreiro</option>
-      <option>Paladino</option>
+
       <option>Rogue</option>
+
+      <option>Hunter</option>
+
+      <option>Mago</option>
+
       <option>Warlock</option>
+
       <option>Priest</option>
-      <option>Druida</option>
-      <option>Mage</option>
+
       <option>Shaman</option>
+
+      <option>Druida</option>
+
       <option>Cavaleiro da Morte</option>
 
     </select>
 
-    <select>
+    <!-- ESPECIALIZAÇÃO -->
+
+    <select id="spec">
+
+      <option>Escolha a Especialização</option>
+
+    </select>
+
+    <!-- FUNÇÃO -->
+
+    <select id="funcao">
 
       <option>Função</option>
 
       <option>🛡️ Tank</option>
+
       <option>⚔️ DPS</option>
+
       <option>✨ Healer</option>
 
     </select>
 
-    <button class="raid-btn">
-      Entrar na Raid
+    <button class="raid-btn" onclick="entrarRaid()">
+
+      Confirmar Raid
+
     </button>
+
+    <div class="raid-status">
+
+  <h3>📊 Composição da Raid</h3>
+
+  <p id="countTank">🛡️ Tanks: 0</p>
+  <p id="countDps">⚔️ DPS: 0</p>
+  <p id="countHealer">✨ Healers: 0</p>
+
+</div>
+
+<div class="raid-roster">
+
+  <h3>👥 Jogadores na Raid</h3>
+
+  <ul id="listaJogadores"></ul>
+
+</div>
 
   </div>
 
