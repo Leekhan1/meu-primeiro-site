@@ -1,3 +1,5 @@
-function mensagem() {
-  alert("JavaScript funcionando 🚀");
+function entrarGuilda() {
+
+  alert("Bem-vindo à Blood Oath ⚔️");
+
 }
